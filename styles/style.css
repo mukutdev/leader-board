@@ -1,3 +1,110 @@
+/* Global style */
 *{
-    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Global variables */
+:root{
+    --heading-link-color:#562EFF;
+    --white-color:#fff;
+    --heading-medium-small: #000000;
+    --link-color-two:#ED6B4F;
+    --light-grey:#9F9F9F;
+    --border-color:#D1D1D1;
+    --heading-font:24px;
+    --heading-medium-font:20px;
+    --heading-small-font:18px;
+    --anchor-font:16px;
+    --course-bg:#FFE4E8;
+    --main-background-color:#F3F1FF;
+}
+
+/* common styles */
+main{
+    background-color: var(--main-background-color);
+}
+.header-area{
+    background-color: var(--heading-link-color);
+}
+.header-container{
+    width: 870px;
+    padding: 18px 0;
+    display: flex;justify-content:space-between ;
+    margin: 0 auto;
+    align-items: center;
+}
+.container{
+    width: 870px;
+    padding: 30px;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 100%;
+}
+h1{
+    color: var(--heading-link-color-color);
+    font-size: var(--heading-font);
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+}
+h2{
+    color: var(--heading-medium-small);
+    font-size: var(--heading-medium-font);
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+
+}
+h3{
+    color: var(--heading-medium-small);
+    font-size: var(--heading-small-font);
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    margin-right: 16px;
+}
+a{
+    text-decoration: none;
+    font-size: var(--heading-small-font);
+    color: var(--heading-link-color);
+
+}
+span{
+    color: var(--light-grey);
+    font-size: var(--heading-small-font);
+}
+/* common styles end */
+.logo{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+.logo img{
+    width: 40.42px;
+    height: 51px;
+    margin-right: 10px;
+}
+.logo span{
+    color: var(--white-color);
+}
+.menu{
+    margin-right: 36px;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.menu ul li a{
+    display: block;
+    color:var(--white-color);
+    font-size: var(--anchor-font);
 }
