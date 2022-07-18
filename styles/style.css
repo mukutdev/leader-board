@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+   
 }
 
 /* Global variables */
@@ -23,8 +24,12 @@
 }
 
 /* common styles */
+body{
+     background-color: var(--main-background-color);
+}
 main{
-    background-color: var(--main-background-color);
+    display: flex;
+    justify-content: center;
 }
 .header-area{
     background-color: var(--heading-link-color);
@@ -40,14 +45,16 @@ main{
     width: 870px;
     padding: 30px;
     background-color: var(--white-color);
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    margin: 30px 0;
+    border-radius: 5px;
+ 
 }
 img{
     width: 100%;
 }
 h1{
-    color: var(--heading-link-color-color);
+    color: var(--heading-link-color);
     font-size: var(--heading-font);
     font-weight: 500;
     line-height: 36px;
@@ -67,7 +74,7 @@ h3{
     font-weight: 500;
     line-height: 27px;
     letter-spacing: 0em;
-    margin-right: 16px;
+    margin-left: 16px;
 }
 a{
     text-decoration: none;
@@ -79,7 +86,12 @@ span{
     color: var(--light-grey);
     font-size: var(--heading-small-font);
 }
+hr{
+    border: 1px solid var(--border-color);
+}
 /* common styles end */
+
+/* header area start */
 .logo{
     display: flex;
     flex-grow: 1;
@@ -108,3 +120,23 @@ span{
     color:var(--white-color);
     font-size: var(--anchor-font);
 }
+/* header area end */
+/* Players area star*/
+.players{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    /* margin: 40px 0; */
+    grid-row-gap: 29px;
+    margin: 29px 0;
+}
+.player{
+    display: flex;
+    align-items: center;
+    
+    
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+/* players area end */
