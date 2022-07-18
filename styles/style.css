@@ -63,14 +63,14 @@ h1 {
 h2 {
   color: var(--heading-medium-small);
   font-size: var(--heading-medium-font);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 34px;
   letter-spacing: 0em;
 }
 h3 {
   color: var(--heading-medium-small);
   font-size: var(--heading-small-font);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 27px;
   letter-spacing: 0em;
   margin-left: 16px;
@@ -80,13 +80,14 @@ a {
   font-size: var(--heading-small-font);
   color: var(--heading-link-color);
 }
-span, p{
+span,
+p {
   color: var(--light-grey);
   font-size: var(--heading-small-font);
 }
-p{
-    margin-left: 15px;
-    padding-top:6px;
+p {
+  margin-left: 15px;
+  padding-top: 6px;
 }
 hr {
   border: 1px solid var(--border-color);
@@ -142,26 +143,82 @@ hr {
 }
 /* players area end */
 /* Blogs area star */
-.blogs{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 26px;
-    margin: 31px 55px 0 0;
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 26px;
+  margin: 31px 55px 0 0;
 }
-.blog{
-    display: flex;
+.blog {
+  display: flex;
 }
-.thumbnail img{
-    width: 177px;
-    height: 117px;
+.thumbnail img {
+  width: 177px;
+  height: 117px;
 }
-.blog-info{
-    padding-left: 15px;
+.blog-info {
+  padding-left: 15px;
 }
 /* Blogs area end */
 /* Latest course Section start */
 
+.latest-course {
+  margin-bottom: 30px;
+}
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px;
+}
 
+.course {
+  width: 252.42px;
+  box-shadow: rgb(217 218 222) 2.91px -0.09px 6px,
+    rgb(255 255 255) -9.91px -9.91px 15px;
+  padding: 11px;
+  border-radius: 15px;
+}
 
-
+.course-details h2 {
+  padding-top: 19px;
+  line-height: 24px;
+}
+.course-details p {
+  color: var(--link-color-two);
+  margin: 0;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.course .course-thumbnail img {
+  width: 224px;
+  height: 104px;
+}
+.course-rating-duration {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.course-rating-duration p {
+  font-size: 14px;
+  margin: 0;
+}
+.course-rating-duration .course-rating .fa-star {
+  font-size: 12px;
+}
+.course-rating-duration .course-rating .filled {
+  color: #ffc014;
+}
+.course-rating-duration .course-rating .empty {
+  color: #aeaeae;
+}
+.duaration {
+  background-color: #ffe4e8;
+  padding: 2px 7px;
+  border-radius: 50px;
+}
+.duaration i,
+span {
+  color: #ff4a60;
+  font-size: 14px;
+}
 /* Latest course Section end */
